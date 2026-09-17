@@ -6,7 +6,7 @@ A compact, inspectable reference for an AWS platform delivery path: Terraform gu
 
 | Role theme | Evidence |
 | --- | --- |
-| AWS, VPC, IAM and security | `terraform/platform.tf` declares private subnets, a cluster logging setting and a workload IAM boundary. |
+| AWS, VPC, IAM and security | `terraform/platform.tf` declares a VPC input boundary, workload TLS egress, cluster-log destination and a workload IAM role boundary. |
 | Terraform / IaC | Small composable Terraform baseline plus deterministic guardrail tests. |
 | Docker, Kubernetes/EKS and CI/CD | `app/admission.py` validates deployment metadata before rollout; CI runs the tests. |
 | Reliability, monitoring and incident work | `docs/eks-operations.md` covers rollout, signals, backup/DR decisions and escalation. |
